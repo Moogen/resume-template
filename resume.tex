@@ -1,0 +1,26 @@
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[12pt, letterpaper]{resume-template}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=1.5cm, right=1.4cm, bottom=.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Input personal information data for the header
+\input{sections/header.tex}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makeresumeheader[C]
+
+\input{sections/education.tex}
+\input{sections/experience.tex}
+\input{sections/projects.tex}
+\input{sections/skills.tex}
+%-------------------------------------------------------------------------------
+\end{document}
